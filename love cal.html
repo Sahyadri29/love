@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title>Love Calculator</title>
+        <style>
+            #cl{
+                margin-left: 120px;
+                font-size: 20px;
+                background-color:green;
+                color: honeydew;
+                border-radius: 10px;
+                padding:10px;
+        
+            }
+            #c2{
+                float: center;
+                font-size: 20px;
+            }
+        </style>
+    </head>
+      <body>
+        <p id="c2">Find your % of Love</p>
+        <input type="text" id="ip1">
+        <input type="text" id="ip2">
+    
+        <br>
+        <br>
+        <button id="cl">Calculate Love%</button>
+        <br>
+        <br>
+        <div id="div1">
+
+        </div>
+
+
+       <script type="text/javascript">
+    document.getElementById("cl").onclick=function(){
+        var name1=document.getElementById("ip1").value;
+        var name2=document.getElementById("ip2").value;
+        var com=Math.floor(Math.random()*100);
+        document.getElementById("div1").innerHTML=name1+" & "+name2+" are "+com+"% compatible";
+
+    }
+    </script>
+   </body>
+</html>
